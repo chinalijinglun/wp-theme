@@ -48,7 +48,6 @@ table {
 	border-spacing: 0;
 }
 body {
-	background:url(./images/bg.png) repeat-x #FFFFFF;
 	font-size:12px;
 	font-family: 'Microsoft YaHei','Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
 	color:#000000;
@@ -115,4 +114,36 @@ ol {
 }
 .description{
 	margin-top: 50px;
+}
+
+.content-bg {
+	background-color: #f6f6f6;
+}
+
+.sidebar-offcanvas {
+	background-color: red;
+}
+
+.widget {
+	background: #fff;
+	margin: 0 0 30px;
+	padding: 10px 20px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+.widget li {
+	margin: 0;
+	padding: 6px 0;
+	list-style: none;
+	clear: both;
+	border-top: solid 1px #eee;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }

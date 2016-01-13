@@ -10,10 +10,14 @@
 <!-- header.php -->
 	<div class="container">
 		<div class="row">
-			<div class="col-cd-12">
+			<div class="col-sm-9">
 				<span class="adsf">hehe</span>
 			</div>
+			<?php get_sidebar(); ?>
 		</div>
 	</div>
+	<!-- footer.php -->
+	<?php get_footer(); ?>
+	<!-- footer.php -->
 </body>
 </html>
