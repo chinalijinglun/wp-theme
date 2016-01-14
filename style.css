@@ -9,119 +9,197 @@ Tags: 标签，多个用半角逗号隔开
 */
 /* Global Styles */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body {
-	font-size:12px;
-	font-family: 'Microsoft YaHei','Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
-	color:#000000;
-}
-a:focus {
-	outline:1px dotted;
-}
-a {
-	color:#717171;
-	text-decoration:none;
-}
-a:hover {
-	text-decoration:none;
-}
-a span {
-	font-size:90%;
-}
-h1 {
-	font-size:25px;
-}
-h2 {
-	font-size:23px;
-}
-h3 {
-	font-size:21px;
-}
-h4 {
-	font-size:19px;
-}
-h5 {
-	font-size:17px;
-}
-h6 {
-	font-size:15px;
-}
-ol {
-	list-style:decimal;
-}
-ul {
-	list-style:disc;
-}
-li {
-	margin-left:20px;
-	position:relative;
-}
-p, li, dl {
-	line-height:18px;
-}
-p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, img {
-	margin-bottom:20px;
-}
-#wrapper {
-	margin-top:7px;
-}
-ul li ul, ol li ol {
-	margin-bottom:0px;
-}
-ol {
-	padding: 0 0 0 5px;
-}
 /*正文css开始*/
+
 *{
 	font-family: 'Microsoft YaHei'
 }
+
+body {
+	font-size: 12px;
+	font-family: 'Microsoft YaHei', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+	color: #000000;
+	background-color: #E7E7E7;
+}
+
+/*comment*/
+/* Comment's List */
+
+.commentlist {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+.commentlist li {
+	width: 100%;
+	clear: both;
+	float: left;
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+	position: relative;
+}
+
+.gravatar {
+	float: left;
+	width: 60px;
+	padding: 0px 10px 0 0;
+	text-align: center;
+}
+
+.gravatar img {
+	display: block;
+	padding: 5px;
+	padding-left: none;
+	margin-bottom: 0px;
+}
+
+.comment_content {
+	float: left;
+	width: 569px;
+}
+
+.commentmetadata {
+	float: right;
+}
+
+.comment-reply-link {
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.author_name {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 15px;
+	float: left;
+}
+
+.author_name a {
+	color: #000000;
+}
+
+.comment_text {
+	clear: both;
+	margin-top: 10px;
+}
+
+.comment-reply-link {
+	text-align: center;
+	display: block;
+}
+
+/* Contact Form */
+
+p.error {
+	margin-left: 140px;
+	margin-top: 10px;
+}
+
+#contact_form ul {
+	float: left;
+}
+
+#contact_form ul li {
+	margin: 10px 0;
+	list-style: none;
+	position: relative;
+	clear: both;
+}
+
+#contact_form label {
+	line-height: 35px;
+	width: 100px;
+	text-align: right;
+	float: left;
+	margin-right: 10px;
+}
+
+#contact_form input#name, #contact_form input#email, #contact_form input#subject, #contact_form textarea {
+	float: left;
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	margin-left: 10px;
+	background: #fcfcfc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#contact_form input#name, #contact_form input#email, #contact_form input#subject {
+	width: 400px;
+}
+
+#contact_form textarea {
+	width: 500px;
+	height: 150px;
+	resize: none;
+}
+
+#contact_form input.button {
+	float: right;
+}
+
+/* Comment form */
+
+#comment_form ul {
+	float: left;
+}
+
+#comment_form ul li {
+	margin: 10px 0;
+	list-style: none;
+	position: relative;
+	clear: both;
+}
+
+#comment_form label {
+	line-height: 35px;
+	width: 100px;
+	text-align: right;
+	float: left;
+	margin-right: 10px;
+}
+
+#comment_form input, #comment_form textarea {
+	float: left;
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	margin-left: 10px;
+	background: #fcfcfc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#comment_form input {
+	width: 400px;
+}
+
+#comment_form textarea {
+	width: 500px;
+	height: 150px;
+	resize: none;
+}
+
+/*comment结束*/
 .description{
 	margin-top: 50px;
 }
 
 .content-bg {
 	background-color: #f6f6f6;
+	font-size: 13px;
+	text-align: center;
+	color: #555555;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	border-top: 1px solid #f9f9f9;
 }
 
-.sidebar-offcanvas {
-	background-color: red;
+.content-bg span {
+	margin: 0 .5em;
 }
 
 .widget {
@@ -146,4 +224,52 @@ ol {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.btn-infoo {
+	color: #fff;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+}
+
+.fright {
+	text-align: right;
+}
+
+.page {
+	background-color: white;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.title-center {
+	text-align: center;
+}
+
+.commentform {
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	margin-top: 500px;
+}
+
+.commentform ul {
+	list-style: none;
+	padding: 0%;
+}
+
+.commentform ul li:first-child {
+	text-align: right;
+	margin-top: -25px;
+}
+
+.comment {
+	width: 685px;
+	height: 140px;
+}
+
+.message {
+	display: block;
+	float: left;
+	width: 100px;
 }

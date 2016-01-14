@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php if ( is_home() ) {
         bloginfo('name'); echo " - "; bloginfo('description');
     } elseif ( is_category() ) {
@@ -15,11 +16,12 @@
     } else {
         wp_title('',true);
     } ?></title>
-    <!-- css -->
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
     <!--pingback -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -99,14 +101,14 @@
         </div>
     </div>
 </div>
- <nav class="navbar navbar-default nav-header">
+<nav class="navbar navbar-default nav-header  navbar-inverse">
  <div class="container">
      <div class="row">
          <div class="col-md-12">
 
 
-      <ul class="nav navbar-nav">
-         <li class="active"><a href="#">首页</a></li>
+             <ul class="nav navbar-nav ">
+                 <li class="active btn-infoo"><a href="#" class="">首页</a></li>
           <li><?php
               // 获取分类
               $terms = get_terms('category', 'orderby=name&hide_empty=0' );
