@@ -37,7 +37,7 @@
 
         </div>
         <?php get_sidebar(); ?>
-        <div class="col-sm-9">
+        <div class="col-sm-9 page">
             <?php comments_template(); ?>
         </div>
     </div>

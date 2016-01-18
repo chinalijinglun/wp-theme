@@ -22,167 +22,11 @@ body {
 	background-color: #E7E7E7;
 }
 
-/*comment*/
-/* Comment's List */
-
-.commentlist {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 20px;
-	float: left;
-	width: 100%;
-}
-
-.commentlist li {
-	width: 100%;
-	clear: both;
-	float: left;
-	padding: 0;
-	list-style-type: none;
-	margin: 0;
-	position: relative;
-}
-
-.gravatar {
-	float: left;
-	width: 60px;
-	padding: 0px 10px 0 0;
-	text-align: center;
-}
-
-.gravatar img {
-	display: block;
-	padding: 5px;
-	padding-left: none;
-	margin-bottom: 0px;
-}
-
-.comment_content {
-	float: left;
-	width: 569px;
-}
-
-.commentmetadata {
-	float: right;
-}
-
-.comment-reply-link {
-	text-decoration: none;
-	font-size: 10px;
-}
-
-.author_name {
-	font-weight: bold;
-	font-style: normal;
-	font-size: 15px;
-	float: left;
-}
-
-.author_name a {
-	color: #000000;
-}
-
-.comment_text {
-	clear: both;
-	margin-top: 10px;
-}
-
-.comment-reply-link {
-	text-align: center;
-	display: block;
-}
-
-/* Contact Form */
-
-p.error {
-	margin-left: 140px;
-	margin-top: 10px;
-}
-
-#contact_form ul {
-	float: left;
-}
-
-#contact_form ul li {
-	margin: 10px 0;
+ul, li {
 	list-style: none;
-	position: relative;
-	clear: both;
+	padding: 0;
+	margin: 0;
 }
-
-#contact_form label {
-	line-height: 35px;
-	width: 100px;
-	text-align: right;
-	float: left;
-	margin-right: 10px;
-}
-
-#contact_form input#name, #contact_form input#email, #contact_form input#subject, #contact_form textarea {
-	float: left;
-	padding: 8px;
-	border: 1px solid #CCCCCC;
-	margin-left: 10px;
-	background: #fcfcfc;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-
-#contact_form input#name, #contact_form input#email, #contact_form input#subject {
-	width: 400px;
-}
-
-#contact_form textarea {
-	width: 500px;
-	height: 150px;
-	resize: none;
-}
-
-#contact_form input.button {
-	float: right;
-}
-
-/* Comment form */
-
-#comment_form ul {
-	float: left;
-}
-
-#comment_form ul li {
-	margin: 10px 0;
-	list-style: none;
-	position: relative;
-	clear: both;
-}
-
-#comment_form label {
-	line-height: 35px;
-	width: 100px;
-	text-align: right;
-	float: left;
-	margin-right: 10px;
-}
-
-#comment_form input, #comment_form textarea {
-	float: left;
-	padding: 8px;
-	border: 1px solid #CCCCCC;
-	margin-left: 10px;
-	background: #fcfcfc;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-
-#comment_form input {
-	width: 400px;
-}
-
-#comment_form textarea {
-	width: 500px;
-	height: 150px;
-	resize: none;
-}
-
 /*comment结束*/
 .description{
 	margin-top: 50px;
@@ -234,6 +78,7 @@ p.error {
 
 .fright {
 	text-align: right;
+	float: right;
 }
 
 .page {
@@ -245,6 +90,7 @@ p.error {
 .title-center {
 	text-align: center;
 }
+
 
 .commentform {
 	border: 1px solid #bbb;
@@ -264,12 +110,122 @@ p.error {
 }
 
 .comment {
-	width: 685px;
-	height: 140px;
+	width: auto;
+	overflow: hidden;
+	border-bottom: 2px #ccc solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .message {
 	display: block;
 	float: left;
 	width: 100px;
+}
+
+/**/
+
+.commentlist {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+.commentlist li {
+	width: 100%;
+	clear: both;
+	float: left;
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+	position: relative;
+}
+
+.gravatar {
+	float: left;
+	width: 60px;
+	padding: 0px 10px 0 0;
+	text-align: center;
+}
+
+.gravatar img {
+	display: block;
+	padding: 5px;
+	padding-left: none;
+	margin-bottom: 0px;
+}
+
+.comment_content {
+	float: left;
+	width: 569px;
+}
+
+.author_name {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 15px;
+	float: left;
+}
+
+.commentmetadata {
+	float: right;
+}
+
+.comment_text {
+	clear: both;
+	margin-top: 10px;
+}
+
+/*发表评论*/
+#commentform ul li {
+	margin: 10px 0;
+	list-style: none;
+	position: relative;
+	clear: both;
+}
+
+#commentform label {
+	line-height: 35px;
+	width: 100px;
+	text-align: right;
+	float: left;
+	margin-right: 10px;
+}
+
+#commentform textarea {
+	width: 80%;
+	height: 150px;
+	resize: none;
+}
+
+#commentform input, #commentform textarea {
+	float: left;
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	margin-left: 10px;
+	background: #fcfcfc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.button, .button:visited {
+	background: #000000 url(./images/alert-overlay.png) repeat-x;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	position: relative;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1;
+	border: 0;
 }
