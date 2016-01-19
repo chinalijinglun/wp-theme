@@ -13,7 +13,7 @@
 			<div class="col-sm-9">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<div class="jumbotron">
+					<div class="jumbotron bg-color">
 						<h3 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 						</h3>
 
