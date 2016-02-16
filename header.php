@@ -105,9 +105,9 @@
  <div class="container">
      <div class="row">
          <div class="col-md-12">
-             <ul class="nav navbar-nav ">
-                 <li class="active btn-infoo"><a href="#" class="">首页</a></li>
-             </ul>
+             <!--             <ul class="nav navbar-nav ">-->
+             <!--                 <li class="active btn-infoo"><a href="#" class="">首页</a></li>-->
+             <!--             </ul>-->
              <div class="daohang">
                  <?php
                  // 列出顶部导航菜单，菜单名称为mymenu，只列出一级菜单
