@@ -105,42 +105,15 @@
  <div class="container">
      <div class="row">
          <div class="col-md-12">
-
-
              <ul class="nav navbar-nav ">
                  <li class="active btn-infoo"><a href="#" class="">首页</a></li>
-          <li><?php
-              // 获取分类
-              $terms = get_terms('category', 'orderby=name&hide_empty=0' );
-
-              // 获取到的分类数量
-              $count = count($terms);
-              if($count > 0){
-                  // 循环输出所有分类信息
-                  foreach ($terms as $term) {
-                      echo '<li><a href="'.get_term_link($term, $term->slug).'" title="'.$term->name.'">'.$term->name.'</a></li>';
-                  }
-              }
-              ?>
-          </li>
-<!--           -->
-<!--         <li class="dropdown">-->
-<!--            <a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-<!--               前端技术 <b class="caret"></b>-->
-<!--            </a>-->
-<!--            <ul class="dropdown-menu">-->
-<!--               -->
-<!--<!--               <li><a href="#">HTML</a></li>-->
-<!--<!--               <li><a href="#">CSS</a></li>-->
-<!--<!--               <li><a href="#">Javascript</a></li>-->
-<!--<!--               <li class="divider"></li>-->
-<!--<!--               <li><a href="#">Node</a></li>-->
-<!--<!--               <li class="divider"></li>-->
-<!--<!--               <li><a href="#">Angular</a></li>-->
-<!--            </ul>-->
-<!--         </li>-->
-<!--         <li><a href="#">关于博主</a></li>-->
-      </ul>
+             </ul>
+             <div class="daohang">
+                 <?php
+                 // 列出顶部导航菜单，菜单名称为mymenu，只列出一级菜单
+                 wp_nav_menu(array('menu' => 'mymenu', 'depth' => 1));
+                 ?>
+             </div>
          </div>
      </div>
  </div>

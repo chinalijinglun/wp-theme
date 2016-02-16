@@ -11,247 +11,267 @@ Tags: 标签，多个用半角逗号隔开
 
 /*正文css开始*/
 
-*{
-	font-family: 'Microsoft YaHei'
+* {
+    font-family: 'Microsoft YaHei'
 }
 
 html, body {
-	padding: 0;
-	margin: 0;
-	min-height: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
 }
+
 body {
-	font-size: 12px;
-	font-family: 'Microsoft YaHei', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
-	color: #000000;
-	background-color: #E7E7E7;
-	position: relative;
-	padding-bottom: 75px;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+    color: #000000;
+    background-color: #E7E7E7;
+    position: relative;
+    padding-bottom: 75px;
 }
+
 ul, li {
-	list-style: none;
+    list-style: none;
 }
+
 /*comment结束*/
-.description{
-	margin-top: 50px;
+.description {
+    margin-top: 50px;
 }
 
 .content-bg {
-	background-color: #f6f6f6;
-	font-size: 13px;
-	text-align: center;
-	color: #555555;
-	padding-top: 28px;
-	padding-bottom: 28px;
-	border-top: 1px solid #f9f9f9;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	clear: both;
+    background-color: #f6f6f6;
+    font-size: 13px;
+    text-align: center;
+    color: #555555;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-top: 1px solid #f9f9f9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
 }
 
 .content-bg span {
-	margin: 0 .5em;
+    margin: 0 .5em;
 }
 
 .widget {
-	background: #fff;
-	margin: 0 0 30px;
-	padding: 10px 20px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    background: #fff;
+    margin: 0 0 30px;
+    padding: 10px 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 }
 
 .widget li {
-	margin: 0;
-	padding: 6px 0;
-	list-style: none;
-	clear: both;
-	border-top: solid 1px #eee;
-	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    clear: both;
+    border-top: solid 1px #eee;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .btn-infoo {
-	color: #fff;
-	background-color: #5bc0de;
-	border-color: #46b8da;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
 }
 
 .fright {
-	text-align: right;
-	float: right;
+    text-align: right;
+    float: right;
 }
 
 .page {
-	background-color: white;
-	border-radius: 8px;
-	margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .title-center {
-	text-align: center;
+    text-align: center;
 }
 
 .bg-color {
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-	background: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    background: #fff;
 }
 
 .weizhi {
-	position: absolute;
-	top: 27px;
-	padding: 0px;
-	right: 50px;
-	float: left;
-	text-align: right;
+    position: absolute;
+    top: 27px;
+    padding: 0px;
+    right: 50px;
+    float: left;
+    text-align: right;
 }
 
 .commentform {
-	border: 1px solid #bbb;
-	border-radius: 8px;
-	margin-bottom: 20px;
-	margin-top: 500px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 500px;
 }
 
 .commentform ul {
-	list-style: none;
-	padding: 0%;
+    list-style: none;
+    padding: 0%;
 }
 
 .commentform ul li:first-child {
-	text-align: right;
-	margin-top: -25px;
+    text-align: right;
+    margin-top: -25px;
 }
 
 .comment {
-	width: auto;
-	overflow: hidden;
-	border-bottom: 2px #ccc solid;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    width: auto;
+    overflow: hidden;
+    border-bottom: 2px #ccc solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .message {
-	display: block;
-	float: left;
-	width: 100px;
+    display: block;
+    float: left;
+    width: 100px;
 }
 
 /**/
 
 .commentlist {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 20px;
-	float: left;
-	width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
 }
 
 .commentlist li {
-	width: 100%;
-	clear: both;
-	float: left;
-	padding: 0;
-	list-style-type: none;
-	margin: 0;
-	position: relative;
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    position: relative;
 }
 
 .gravatar {
-	float: left;
-	width: 60px;
-	padding: 0px 10px 0 0;
-	text-align: center;
+    float: left;
+    width: 60px;
+    padding: 0px 10px 0 0;
+    text-align: center;
 }
 
 .gravatar img {
-	display: block;
-	padding: 5px;
-	padding-left: none;
-	margin-bottom: 0px;
+    display: block;
+    padding: 5px;
+    padding-left: none;
+    margin-bottom: 0px;
 }
 
 .comment_content {
-	float: left;
-	width: 569px;
+    float: left;
+    width: 569px;
 }
 
 .author_name {
-	font-weight: bold;
-	font-style: normal;
-	font-size: 15px;
-	float: left;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    float: left;
 }
 
 .commentmetadata {
-	float: right;
+    float: right;
 }
 
 .comment_text {
-	clear: both;
-	margin-top: 10px;
+    clear: both;
+    margin-top: 10px;
 }
 
 /*发表评论*/
 #commentform ul li {
-	margin: 10px 0;
-	list-style: none;
-	position: relative;
-	clear: both;
+    margin: 10px 0;
+    list-style: none;
+    position: relative;
+    clear: both;
 }
 
 #commentform label {
-	line-height: 35px;
-	width: 100px;
-	text-align: right;
-	float: left;
-	margin-right: 10px;
+    line-height: 35px;
+    width: 100px;
+    text-align: right;
+    float: left;
+    margin-right: 10px;
 }
 
 #commentform textarea {
-	width: 80%;
-	height: 150px;
-	resize: none;
+    width: 80%;
+    height: 150px;
+    resize: none;
 }
 
 #commentform input, #commentform textarea {
-	float: left;
-	padding: 8px;
-	border: 1px solid #CCCCCC;
-	margin-left: 10px;
-	background: #fcfcfc;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+    float: left;
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    margin-left: 10px;
+    background: #fcfcfc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 .button, .button:visited {
-	background: #000000 url(./images/alert-overlay.png) repeat-x;
-	display: inline-block;
-	padding: 5px 10px 6px;
-	color: #fff;
-	text-decoration: none;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-	position: relative;
-	cursor: pointer;
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 1;
-	border: 0;
+    background: #000000 url(./images/alert-overlay.png) repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    border: 0;
+}
+
+/*这块是导航菜单改*/
+.daohang li {
+    float: left;
+}
+
+.daohang li a {
+    position: relative;
+    font-size: 12px;
+    display: block;
+    padding: 7px 15px;
+    color: #ffffff;
+}
+
+.daohang ul {
+    padding: 0;
 }
